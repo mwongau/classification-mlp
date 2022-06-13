@@ -6,13 +6,10 @@ Reference for Seaborn datasets:
 https://seaborn.pydata.org/generated/seaborn.load_dataset.html
 
 ### Test condition
-Only the numerical features of Titanic dataset are used in classification.
-10-fold cross-validation is used to determine the classification accuracy of survival.
 The classifier used is multi-layer perceptron (MLP). 
+The following features of Titanic dataset are selected and used in MLP training: pclass, sex, age, sibsp, parch, fare.
+The class label is "survived". 
+10-fold cross-validation is used to determine the classification accuracy of survival.
 
 ### Test result
-The 10-fold cross-validation accuracy is 72.00%.
-The accuracy might be further improved by using more features instead of using numerical features 
-only. 
-  
-  
+The 10-fold cross-validation accuracy is 78.86%.
